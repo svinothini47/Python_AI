@@ -1,0 +1,29 @@
+import tkinter as tk
+
+root=tk.Tk()
+root.title("login page")
+root.geometry("400x300")
+root.configure(bg="violet")
+
+f=tk.Frame(root,width=400,height=300,bg="blue")
+f.place(x=0,y=0)
+
+l=tk.Label(text="login page")
+l.place(x=150,y=20)
+
+nl=tk.Label(text="Name")
+nl.place(x=20,y=50)
+
+ne=tk.Entry(f)
+ne.place(x=100,y=50,width=150)
+
+pl=tk.Label(text="Password")
+pl.place(x=20,y=90)
+
+pe=tk.Entry(f,bd=2)
+pe.place(x=100,y=90,width=150)
+
+b=tk.Button(f,text="Submit",bd=2,relief="solid")
+b.place(x=100,y=140,width=150)
+
+root.mainloop()
